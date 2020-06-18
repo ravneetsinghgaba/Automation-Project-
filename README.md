@@ -1,5 +1,5 @@
 # Automation-Project-
-Instagram Automation 
+Instagram Automation. 
 This is an automation script written using puppeteer, a Node library.
 First it will login, then based on the command given it will perform the required action.
 Commands which can be performed are:
