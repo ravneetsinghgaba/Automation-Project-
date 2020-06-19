@@ -35,11 +35,6 @@ let mainLink= "https://www.instagram.com/";
     await navigationHelper(tab, "button[type='button']");
 
     for(let i=0 ; i<LnCList.length ; i++){
-        //search username
-    //  await tab.waitForSelector("input[placeholder='Search']", {delay: 200});
-    //  await tab.type("input[placeholder='Search']", LnCList[i], {delay: 50});
-    //  await tab.waitForSelector(".z556c");
-    //  await navigationHelper(tab, ".z556c");
 
      let pageLink= mainLink + followList[i];
      let pageTab= await browser.newPage();
@@ -51,7 +46,7 @@ let mainLink= "https://www.instagram.com/";
      let postOnPage= await pageTab.$$(".v1Nh3 a");
      let postToLike= fs.readFileSync("./commands/postToLike.txt", "utf-8");
      let commentToDo= fs.readFileSync("./commands/commentToDo.txt", "utf-8");
-     console.log("Page: " + followList[i]);
+     console.log("Account Name: " + followList[i]);
      for(let i=0 ; i<postToLike ; i++){
         let link= await pageTab.evaluate(function(q){
             return q.getAttribute("href");
@@ -74,9 +69,6 @@ let mainLink= "https://www.instagram.com/";
             await newTab.type(".X7cDz", commentToDo, {delay: 100});
             await newTab.keyboard.press("Enter", {delay:100});
             console.log("Comment done");
-
-            
-    
         }
         
         await newTab.close();

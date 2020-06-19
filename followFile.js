@@ -42,7 +42,7 @@ let mainLink= "https://www.instagram.com/";
         //follow user
        await newTab.waitForSelector(".vBF20._1OSdk");
        await newTab.click(".vBF20._1OSdk");
-       console.log("Page followed");
+       console.log("Account followed: " + followList[i]);
        await newTab.close();
      }
 }

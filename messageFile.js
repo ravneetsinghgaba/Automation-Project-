@@ -48,7 +48,7 @@ let mainLink= "https://www.instagram.com/";
         await newTab.waitForSelector(".ItkAi");
         await newTab.type(".ItkAi", toSend, {delay:100});
         await newTab.keyboard.press("Enter", {delay:200});
-        console.log("Message Sent");
+        console.log("Message sent to: " + followList[i]);
         await newTab.close();
     }
 

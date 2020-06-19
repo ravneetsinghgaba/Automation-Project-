@@ -1,6 +1,5 @@
 module.exports= [
-    "9gag",
-    "barked",
-    "thepotatocouple"
-
+    "desifellaa",
+    "memeetsingh",
+    "mayankarora224"
 ]
