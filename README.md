@@ -9,7 +9,7 @@ Commands which can be performed are:
   4. Unfollow pages.
 
 You can: 
-  1. Mention as mamy pages as you want to follow.
+  1. Mention as many pages as you want to follow.
   2. Tell how many posts to like.
   3. Tell what to comment on the post.
   4. Tell what message to send.
